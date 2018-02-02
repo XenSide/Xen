@@ -23,7 +23,7 @@ public class IO {
                 s = tastiera.readLine();
                 isDone = true;
             } catch (IOException e) {
-                System.err.println("Errore nell'inserimento");
+                System.err.println("Errore 01: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
@@ -40,7 +40,7 @@ public class IO {
                 i = Integer.valueOf(tastiera.readLine());
                 isDone = true;
             } catch (IOException | NumberFormatException e) {
-                System.err.println("Errore nell'inserimento");
+                System.err.println("Errore 02: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
@@ -56,7 +56,7 @@ public class IO {
                 c = tastiera.readLine().charAt(0);
                 isDone = true;
             } catch (IOException e) {
-                System.err.println("Errore nell'inserimento");
+                System.err.println("Errore 03: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
@@ -72,7 +72,7 @@ public class IO {
                 d = Double.valueOf(tastiera.readLine());
                 isDone = true;
             } catch (IOException | NumberFormatException e) {
-                System.err.println("Errore nell'inserimento!");
+                System.err.println("Errore 04: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
@@ -89,7 +89,7 @@ public class IO {
                 f = Float.valueOf(tastiera.readLine());
                 isDone = true;
             } catch (IOException | NumberFormatException e) {
-                System.err.println("Errore nell'inserimento");
+                System.err.println("Errore 05: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
@@ -120,7 +120,7 @@ public class IO {
 
                 }
             } catch (Exception e) {
-                System.err.print("Errore nell'inserimento!");
+                System.err.print("Errore 06: Errore nell'inserimento");
                 isDone = false;
             }
         } while (!isDone);
